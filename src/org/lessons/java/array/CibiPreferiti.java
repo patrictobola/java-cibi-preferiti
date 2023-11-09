@@ -7,14 +7,17 @@ public class CibiPreferiti {
 	String[] favouriteFood = {"Sushi", "Pizza", "Pasta", "Insalata", "BBQ", "Gelato"};
 	
 //	Stampo a video la lunghezza della classifica
-	System.out.println(favouriteFood.length);
+	System.out.println("La lista contiene " + favouriteFood.length + " cibi");
 	
 //	Stampo a video il primo in classifica
-	System.out.println(favouriteFood[0]);
+	System.out.println("Il tuo preferito è: " + favouriteFood[0]);
 	
 //	Stampo a video l'ultimo in classifica
-	System.out.println(favouriteFood[favouriteFood.length - 1]);
+	System.out.println("Quello meno preferito è: " + favouriteFood[favouriteFood.length - 1]);
 	
+	
+//	BONUS 
+//	System.out.println();
 	
 	}
 }
