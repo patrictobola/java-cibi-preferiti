@@ -4,7 +4,7 @@ public class CibiPreferiti {
 	public static void main(String[] args) {
 		
 //	Creo un nuovo array contenente una lista di cibi 
-	String[] favouriteFood = {"Sushi", "Pizza", "Pasta", "Insalata", "BBQ", "Gelato"};
+	String[] favouriteFood = {"Sushi", "Pizza", "Pasta", "Insalata", "BBQ", "Gelato", "Latte"};
 	
 //	Stampo a video la lunghezza della classifica
 	System.out.println("La lista contiene " + favouriteFood.length + " cibi");
@@ -17,7 +17,15 @@ public class CibiPreferiti {
 	
 	
 //	BONUS 
-//	System.out.println();
 	
+//	Prendo il numero del cibo nella posizione mediana
+	int middleFood = favouriteFood.length / 2;
+	
+	if(favouriteFood.length % 2 == 1) {
+		System.out.println("Il cibo che sta al centro della lista è: " + favouriteFood[middleFood]);
+		
+	}else {
+		System.out.println("Al centro della lista ci sono due piatti preferiti e sono: " + favouriteFood[middleFood - 1] + " e " + favouriteFood[middleFood]);
+	}
 	}
 }
